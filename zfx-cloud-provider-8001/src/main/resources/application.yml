@@ -30,7 +30,7 @@ eureka:
     instance-id: zfx-cloud-provider-8001   #自定义服务名称信息
     prefer-ip-address: true     #访问路径可以显示IP地址
 
-info:
+info:                                     #actuator与注册微服务info信息完善
   app.name: demo-zfx-cloud                #app的名字 可随意
   company.name: www.zfxcloud.com          #公司名字
   build.artifactId: ${project.artifactId}
