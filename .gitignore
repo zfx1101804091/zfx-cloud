@@ -1,0 +1,4 @@
+# Project exclude paths
+/zfx-cloud-api/target/
+/zfx-cloud-consumer-80/target/
+/zfx-cloud-provider-8001/target/
