@@ -2,13 +2,12 @@ package com.zfx.cloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
-public class ZfxCloudProvider8001_App 
-{
-    public static void main( String[] args )
-    {
-        SpringApplication.run(ZfxCloudProvider8001_App.class,args);
+@EnableEurekaClient //本服务启动后会自动注册进eureka服务中
+public class ZfxCloudProvider8001_App {
+    public static void main(String[] args) {
+        SpringApplication.run(ZfxCloudProvider8001_App.class, args);
     }
 }

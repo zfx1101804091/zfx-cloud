@@ -19,6 +19,21 @@
             <artifactId>zfx-cloud-api</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <!-- 将微服务provider侧注册进eureka -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+        <!--微服务info内容详细信息: actuator监控信息完善 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -39,6 +54,14 @@
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
+        <!--
+        Jetty与Tomcat的对比：
+            ①Jetty 比较容易贴合第三方框架，比如你可以直接用 Spring 配置一个 Jetty 服务器
+            ②直接可以将 Jetty 作为提供 HTTP 服务的组件，嵌入到应用中
+            ③Jetty 是面向 Handler 的架构，而 Tomcat 是面向容器的架构
+            ④Jetty 默认采用 NIO 技术，而 Tomcat 默认是 BIO
+            ⑤Jetty 高度模块化，可以很灵活的管理拓展组件，而 Tomcat 对其他组件的管理则相对困难
+        -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jetty</artifactId>
