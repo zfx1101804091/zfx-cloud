@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="zfx-cloud-provider-8001" />
-        <module name="zfx-cloud-api" />
         <module name="zfx-cloud-consumer-80" />
+        <module name="zfx-cloud-eureka-7001" />
+        <module name="zfx-cloud-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />

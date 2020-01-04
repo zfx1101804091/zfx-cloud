@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class zfxcloudconsumer80_app 
+public class ZfxCloudConsumer80_App 
 {
     public static void main( String[] args )
     {
-        SpringApplication.run(zfxcloudconsumer80_app.class,args);
+        SpringApplication.run(ZfxCloudConsumer80_App.class,args);
     }
 }
