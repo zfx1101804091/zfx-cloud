@@ -1,5 +1,9 @@
 package com.zfx.cloud.config;
 
+import com.netflix.loadbalancer.IRule;
+import com.netflix.loadbalancer.RandomRule;
+import com.netflix.loadbalancer.RetryRule;
+import com.netflix.loadbalancer.RoundRobinRule;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,6 +24,14 @@ public class ConfigBean {
     @LoadBalanced//Spring Cloud Ribbon是基于Netflix Ribbon实现的一套客户端       负载均衡的工具。
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
+    }
+    
+    @Bean
+    public IRule myRule(){
+        //用我们重新选择的随机算法替代默认的轮询算法
+//        return new RandomRule();
+        //先按默认的轮询策略获取服务，如果失败则在指定时间进行重试，获取可用服务（即获取不到的服务，重试几次连不上就不去获取了）
+        return new RetryRule();
     }
 }
 
