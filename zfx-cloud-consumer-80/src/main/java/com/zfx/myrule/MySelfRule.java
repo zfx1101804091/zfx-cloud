@@ -15,6 +15,6 @@ public class MySelfRule {
     
     @Bean
     public IRule myRule(){
-        return new RandomRule();//Ribbon默认时轮询，这里我自定义为随机
+        return new RandomRule_zfx();//Ribbon默认时轮询，这里我自定义为随机
     }
 }
