@@ -13,6 +13,7 @@
     <file url="file://$PROJECT_DIR$/zfx-cloud-provider-8001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zfx-cloud-provider-8002/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zfx-cloud-provider-8003/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zfx-cloud-provider-hystrix-8001/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

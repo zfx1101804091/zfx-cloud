@@ -20,6 +20,7 @@
         <module>zfx-cloud-provider-8002</module>
         <module>zfx-cloud-provider-8003</module>
         <module>zfx-cloud-consumer-feign</module>
+        <module>zfx-cloud-provider-hystrix-8001</module>
     </modules>
     
     

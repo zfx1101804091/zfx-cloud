@@ -13,6 +13,7 @@
         <module name="zfx-cloud-eureka-7003" />
         <module name="zfx-cloud-eureka-7002" />
         <module name="zfx-cloud-eureka-7001" />
+        <module name="zfx-cloud-provider-hystrix-8001" />
         <module name="zfx-cloud-consumer-80" />
         <module name="zfx-cloud-provider-8003" />
       </profile>
