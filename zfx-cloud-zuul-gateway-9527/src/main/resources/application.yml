@@ -1,0 +1,23 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: zfx-cloud-zuul-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true
+
+
+info:                                     #actuator与注册微服务info信息完善
+  app.name: demo-zfx-cloud                #app的名字 可随意
+  company.name: www.zfxcloud.com          #公司名字
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
+
+

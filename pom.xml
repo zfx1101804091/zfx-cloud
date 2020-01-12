@@ -22,6 +22,7 @@
         <module>zfx-cloud-consumer-feign</module>
         <module>zfx-cloud-provider-hystrix-8001</module>
         <module>zfx-cloud-consumer-hystrix-dashboard</module>
+        <module>zfx-cloud-zuul-gateway-9527</module>
     </modules>
     
     
