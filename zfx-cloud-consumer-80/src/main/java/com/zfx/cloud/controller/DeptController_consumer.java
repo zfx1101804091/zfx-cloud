@@ -21,6 +21,7 @@ public class DeptController_consumer {
     
     //private static final String REST_URL_PREFIX = "http://localhost:8001";
     
+    //通过微服务名字获得调用地址
     private static final String REST_URL_PREFIX = "http://ZFX-CLOUD-PROVIDER-8001";
     /*
     使用

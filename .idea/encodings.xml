@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/zfx-cloud-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zfx-cloud-consumer-80/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zfx-cloud-consumer-80/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zfx-cloud-consumer-feign/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zfx-cloud-eureka-7001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zfx-cloud-eureka-7001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zfx-cloud-eureka-7002/src/main/java" charset="UTF-8" />
