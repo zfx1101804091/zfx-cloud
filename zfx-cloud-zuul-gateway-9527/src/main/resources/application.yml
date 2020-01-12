@@ -13,6 +13,11 @@ eureka:
     instance-id: gateway-9527.com
     prefer-ip-address: true
 
+zuul:
+  ignored-services: zfx-cloud-provider-8001         #忽略原真实服务名忽略
+  routes:
+    mydept.serviceId: zfx-cloud-provider-8001       #路由访问映射规则  原先：http://myzuul.com:9527/microservicecloud-dept/dept/get/2
+    mydept.path: /mydept/**                         #配置路由访问映射后  ：http://myzuul.com:9527/mydept/dept/get/1
 
 info:                                     #actuator与注册微服务info信息完善
   app.name: demo-zfx-cloud                #app的名字 可随意
