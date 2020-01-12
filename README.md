@@ -14,3 +14,8 @@ Feign旨在使编写Java Http客户端变得更容易。
  
 Feign集成了Ribbon
 利用Ribbon维护了MicroServiceCloud-Dept的服务列表信息，并且通过轮询实现了客户端的负载均衡。而与Ribbon不同的是，通过feign只需要定义服务绑定接口且以声明式的方法，优雅而简单的实现了服务调用
+
+Hystrix断路器
+
+-- 服务降级处理是在客户端实现完成的，与服务端没有关系
+-- 修改microservicecloud-api工程，DeptClientService接口在注解@FeignClient中添加fallbackFactory属性值
